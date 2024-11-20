@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul style="list-style-type:circle">
+        <li><a href="acceuil.html">Missions Militaires</a></li>
+        
+        <li><a href="inscription.html">Page d'inscription ou réclamation </a></li>
+        
+       <li><a href="equip.html">Page des équipements militaires </a></li>
+       
+    </ul>
+    <h1>Formulaire d'inscription ou de réclamation</h1>
+    <form method="post" enctype="application/x-www-form-urlencoded">
+        <table>
+        <tr>
+       <th> <label for="name"> Nom: </label></th>
+    <th> <input type="text" name="name" id="name" required></th>
+    </tr>
+       
+        <tr>
+       <th> <label for="prename"> Prénom: </label></th>
+    <th> <input type="text" name="prename" id="prename" required></th>
+    </tr>
+<tr>
+<th> <label for="grade">Grade: </label> </th>
+<th>  <select id="grade" name="grade"> 
+            <option value="option1">lieutnant</option>
+            <option value="option2">sergent</option>
+            <option value="option3">colonel</option>
+            <option value="option4">lieutnant colonel</option>
+      
+        </select>
+    </th>
+    </tr>
+<tr>
+<th>  <label for="email"> Email: </label>   </th>
+<th> <input type="email" name="email" id="email">   </th>
+    </tr>
+      <tr>  
+    
+        <th>Message: </th>
+        <th><textarea id="message" name="message" rows="4" cols="50"> </textarea></th>
+       
+    </tr>
+  <tr> 
+    <th>Joindre un fichier</th>
+    <th> <input type="file" name="fichier" id="fichier" > </th>
+  </tr>
+  
+
+</table>
+<input type="submit" value="Envoyer">
+</form>
+
+    
+</body>
+
+</html>
